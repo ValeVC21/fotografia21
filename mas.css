@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  color:#fff;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+/*encabezado*/
+
+header{
+
+  width: 100%;
+  height: 100vh;
+  background: url(img/img8.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; 
+}
+
+nav{
+text-align: right;
+padding: 50px 10px 0 0;
+
+}
+
+nav > a{
+  color: rgba(7, 6, 6, 0.945);
+  background: rgba(253, 253, 253, 0.568);
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+
+}
+nav > a:hover{
+  text-decoration: underline;
+}
+header .encabezado{
+  display: flex;
+  height: 400px;
+  width: 50%;
+  background: rgba(37, 29, 13, 0.507);
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  margin: 100px 25% 25% 25%;
+}
+.encabezado h1{
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.733);
+  margin-top: 5px;
+  font-family: 'Lobster', cursive;
+}
+.encabezado button{
+  background-color: rgba(36, 25, 4, 0.938);
+  color: rgba(255, 255, 255, 0.788);
+  font-size: 18px;
+  padding: 10px 25px;
+  border: 0;
+}
+
+/*......*/
+
+/*inicio*/
+
+#historia{
+  background: #000;
+  width: 100%;
+  height: 790px;
+}
+.linea{
+  border-top: 5px solid #fff;
+  margin-bottom: 40px;
+  width: 50%;
+  margin-left: 25%;
+
+}
+.tipo-fotgrafia{
+  background: #000;
+  width: 100%;
+  height: 790px;
+}
+
+
+/*.....*/
+
+/*carrusel*/
+
+.carrusel {
+  margin: 0 auto;
+  justify-content: center;
+}
+  
+.carrusel ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 910px; 
+  
+  scroll-behavior: smooth;
+}
+
+.carrusel-fotos {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+
+.carrusel-fotos img {
+  background: black;
+  border: 2px solid black;
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.carrusel-menu {
+  display: flex;
+  justify-content: center;
+}
+
+
+  .carrusel-fotos {
+    overflow: hidden;
+  }
+
+  .carrusel-fotos img {
+    width: 900px;
+    height: 500px;
+  }
+  .carrusel-menu {
+    display: flex;
+  }
+  .carrusel-menu img {
+    box-sizing: border-box;
+    width: 70px;
+    height: 60px;
+    border: 5px solid rgba(119, 117, 117, 0.459);
+    object-fit: contain;
+  }
+  .carrusel-menu img:hover {
+    border: none;
+  }
+
+
+
+
