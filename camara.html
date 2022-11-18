@@ -1,197 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="./img/icono1.png"/>
-    <link rel="stylesheet" href="./camara.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="./img/icono1.png" />
+    <link rel="stylesheet" href="./camara.css" />
     <title>CAMARA</title>
-</head>
-<body>
-  <header>
-    <nav>
+  </head>
+
+  <body>
+    <header>
+      <nav>
         <a href="./index.html">INICIO</a>
         <a href="./mas.html">UN POCO MAS</a>
         <a href="./camara.html">CAMARA</a>
-        <a href="#">APRENDE!!</a>
-    </nav>
-    <section class="encabezado">
-        <h1>CAMARA</h1>
+        <a href="./aprende.html">APRENDE!!</a>
+      </nav>
+      <section class="encabezado">
+        <h2>CAMARA</h2>
         <a href="#section1">
-            <button class="bto">VER MAS</button>
-          </a> 
-    </section>
-</header>
-  <main>
-    <section id="section1">
-      <h2>LA CAMARA</h2>
-      <div class="linea"></div>
-      <div class="into">
-        <h2>HISTORIA</h2>
-        <p>Los orígenes de la fotografía se remontan a 1826, cuando el inventor francés Joseph Nicéphore Niépce, amante de la química, pudo crear la primera fotografía de la historia, a la que denominó heliografía. Esta primera foto fue tomada con una cámara oscura; un dispositivo que consistía en una caja cerrada con un pequeño orificio por donde escapaba la luz. <br>
-        Sosteniendo este dispositivo en la mano, Niépce instaló una placa especial con una capa de betún, que se solidificó después de unas 8 horas de exposición a la luz. Posteriormente, el inventor retiró la placa y retiró el betún blando sin cambiar el betún duro, dejando para siempre una imagen de cómo lucía su patio trasero ese día, marcando el inicio de la historia de la fotografía. <br>
-        Este experimento practicado por Niépce se convirtió en la respuesta habitual cuando se pregunta quién inventó la fotografía y habrá que referirse al siglo XVIII al investigar cuáles fueron sus inicios. No obstante, si nos preguntamos cuándo se inventó la fotografía como tal, no solo hay que mencionar a Niépce, ya que Louis Daguerre también tiene un papel protagónico en este proceso
-        </p>
-      </div>
-    </section>
+          <button class="bto">VER MAS</button>
+        </a>
+      </section>
+    </header>
+    <main>
+      <section id="section1">
+        <h2>LA CAMARA</h2>
+        <div class="linea"></div>
+        <div class="into">
+          <h2>HISTORIA</h2>
+          <p>
+            Los orígenes de la fotografía se remontan a 1826, cuando el inventor
+            francés Joseph Nicéphore Niépce, amante de la química, pudo crear la
+            primera fotografía de la historia, a la que denominó heliografía.
+            Esta primera foto fue tomada con una cámara oscura; un dispositivo
+            que consistía en una caja cerrada con un pequeño orificio por donde
+            escapaba la luz. <br />
+            Sosteniendo este dispositivo en la mano, Niépce instaló una placa
+            especial con una capa de betún, que se solidificó después de unas 8
+            horas de exposición a la luz. Posteriormente, el inventor retiró la
+            placa y retiró el betún blando sin cambiar el betún duro, dejando
+            para siempre una imagen de cómo lucía su patio trasero ese día,
+            marcando el inicio de la historia de la fotografía. <br />
+            Este experimento practicado por Niépce se convirtió en la respuesta
+            habitual cuando se pregunta quién inventó la fotografía y habrá que
+            referirse al siglo XVIII al investigar cuáles fueron sus inicios. No
+            obstante, si nos preguntamos cuándo se inventó la fotografía como
+            tal, no solo hay que mencionar a Niépce, ya que Louis Daguerre
+            también tiene un papel protagónico en este proceso
+          </p>
+        </div>
+        <br /><br />
+      </section>
 
-    <section id="camara">
-      <h1>...LINEA DE TIEMPO DE LAS CAMARAS...</h1>
-      <div class="linea"></div>
-      <div class="linea2">
+      <section id="camara">
+        <h1>...LINEA DE TIEMPO DE LAS CAMARAS...</h1>
+        <div class="linea"></div>
         <div class="container">
           <div class="camara1">
-            <img src="./img/camara1.png" alt=""  id="cam1">
+            <img src="./img/camara1.png" alt="" id="cam1" />
           </div>
           <div class="boton1">
             <h2>Camara Oscura</h2>
-            <button onclick="openmodal()">
-                 Hacer Click <br> 1830
-            </button>
-            </div>
-              <div id="modal_container" class="modal-container">
-                <div class="modal">
-                  <h1>Camara Oscura</h1>
-                  <p>
-                    La cámara oscura permitió proyectar una imagen plana al inferior de una superficie la cual consiste en una caja cerrada con un pequeño agujero el cual proyectaba luz de una pared creada por daguerrotipo Louis.
-                  </p>
-                  <button id="close">Cerrar</button>
-                </div>
-              </div>
-          </div>
-
-        <div class="container2">
-          <div class="boton2">
-            <h2>Cámara colondio </h2>
-            <button onclick="openmodal()">
-              Hacer Click<br> 1850
+            <button onclick="openmodal('camOscura')">
+              Hacer Click <br />
+              1830
             </button>
           </div>
           <div id="modal_container" class="modal-container">
             <div class="modal">
-              <h1>La cámara colondio húmedo </h1>
-              <p>
-                La cámara colondio húmedo inventada por Frederick Scott Acher. El cual hizo un grandioso proceso inventando aquella cámara.
+              <h1 id="titulomodalcamara"></h1>
+              <p id="textoModalCamara"></p>
+              <button onclick="cerrarmodal()">Cerrar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container2">
+          <div class="boton2">
+            <h2>Cámara colondio</h2>
+            <button onclick="openmodal('camColondio')">
+              Hacer Click<br />
+              1850
+            </button>
+          </div>
+          <div id="modal_container" class="modal-container">
+            <div class="modal">
+              <h1 id="titulomodalcamara">La cámara colondio húmedo</h1>
+              <p id="textoModalCamara">
+                La cámara colondio húmedo inventada por Frederick Scott Acher.
+                El cual hizo un grandioso proceso inventando aquella cámara.
               </p>
               <button id="close">Cerrar</button>
             </div>
           </div>
           <div class="camara1">
-            <img src="./img/camara2.jpg" alt=""  id="cam1">
+            <img src="./img/camara2.jpg" alt="" id="cam2" />
           </div>
         </div>
 
         <div class="container">
           <div class="camara1">
-              <img src="./img/camara3.jpg" alt=""  id="cam1">
+            <img src="./img/camara3.jpg" alt="" id="cam1" />
           </div>
           <div class="boton1">
             <h2>Eastman Kodak</h2>
-            <button onclick="openmodal()">
-              Hacer Click<br> 1888
+            <button onclick="openmodal('camEastman')">
+              Hacer Click<br />
+              1888
             </button>
           </div>
           <div id="modal_container" class="modal-container">
             <div class="modal">
-              <h1>Eastman Kodak</h1>
-              <p>
-                George Eastman fue el fundador de la Eastman Kodak Company e inventor del rollo de película, que sustituyó a la placa de cristal, con lo cual consiguió poner la fotografía a disposición. 
-              </p>
+              <h1></h1>
+              <p></p>
               <button id="close">Cerrar</button>
             </div>
           </div>
-      </div>
+        </div>
 
         <div class="container2">
-         <div class="boton2">
-          <h2>La leica</h2>
-          <button onclick="openmodal()">
-            Hacer Click<br> 1925
-          </button>
-        </div>
-        <div id="modal_container" class="modal-container">
-          <div class="modal">
-            <h1>La leica</h1>
-            <p>
-              La leica fue la primera cámara compacta de película de 35mm. Los primeros prototipos fueron construidos por Oskar Barnack en E litz Optische Werke, Wetzlar, en 1913. Barnack uso película estándar de cine de 35mm, pero amplio el tamaño de la imagen hasta los 24x36mm.
-            </p>
-            <button id="close">Cerrar</button>
+          <div class="boton2">
+            <h2>La leica</h2>
+            <button onclick="openmodal('camLeica')">
+              Hacer Click<br />
+              1925
+            </button>
+          </div>
+          <div id="modal_container" class="modal-container">
+            <div class="modal">
+              <h1></h1>
+              <p></p>
+              <button id="close">Cerrar</button>
+            </div>
+          </div>
+          <div class="camara1">
+            <img src="./img/camara4.jpg" alt="" id="cam2" />
           </div>
         </div>
-        <div class="camara1">
-          <img src="./img/camara4.jpg" alt=""  id="cam1">
-        </div>
-      </div>
 
-      <div class="container">
-        <div class="camara1">
-          <img src="./img/camara5.jpg" alt=""  id="cam1">
-      </div>
-      <div class="boton1">
-        <h2>Cámara Casete</h2>
-        <button onclick="openmodal()">
-          Hacer Click<br> 1975
-        </button>
-      </div>
-        <div id="modal_container" class="modal-container">
-          <div class="modal">
-            <h1>Cámara Casete</h1>
-            <p>
-              Esta cámara registraba las imágenes en una cinta de casete y tardo 23 segundos en capturar su primera imagen en diciembre
-            </p>
-            <button id="close">Cerrar</button>
+        <div class="container">
+          <div class="camara1">
+            <img src="./img/camara5.jpg" alt="" id="cam1" />
+          </div>
+          <div class="boton1">
+            <h2>Cámara Casete</h2>
+            <button onclick="openmodal('camCasete')">
+              Hacer Click<br />
+              1975
+            </button>
+          </div>
+          <div id="modal_container" class="modal-container">
+            <div class="modal">
+              <h1></h1>
+              <p></p>
+              <button id="close">Cerrar</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="container2">
-        <div class="boton2">
-          <h2>Cámara Digital</h2>
-          <button onclick="openmodal()">
-            Hacer Click<br> 1988
-          </button>
-        </div>
-        <div id="modal_container" class="modal-container">
-          <div class="modal">
-            <h1>Cámara Digital</h1>
-            <p>
-              Una cámara digital es una cámara fotográfica que, en vez de captar y almacenar fotografías en película química como las cámaras fotográficas de película fotográfica, recurren a la fotografía digital para generar y almacenar imágenes 
-            </p>
-            <button id="close">Cerrar</button>
+        <div class="container2">
+          <div class="boton2">
+            <h2>Cámara Digital</h2>
+            <button onclick="openmodal('camDigital')">
+              Hacer Click<br />
+              1988
+            </button>
+          </div>
+          <div id="modal_container" class="modal-container">
+            <div class="modal">
+              <h1></h1>
+              <p></p>
+              <button id="close">Cerrar</button>
+            </div>
+          </div>
+          <div class="camara1">
+            <img src="./img/camra6.jpg" alt="" id="cam2" />
           </div>
         </div>
-        <div class="camara1">
-          <img src="./img/camra6.jpg" alt=""  id="cam1">
-        </div>
-      </div>
-      <div class="container">
-        <div class="camara1">
-          <img src="./img/camara7.jpg" alt=""  id="cam1">
-        </div>
-        <div class="boton1">
-          <h2>digitales modernas</h2>
-        <button id="open">
-          Hacer Click<br>Hasta Ahora
-        </button>
-        </div>
-        <div id="modal_container" class="modal-container">
-          <div class="modal">
-            <h1>cámaras digitales modernas</h1>
-            <p>
-              Las cámaras digitales modernas generalmente tienen varias funsiones y contienen dispositivos capaces de grabar sonido y/o videos.
-            </p>
-            <button id="close">Cerrar</button>
+
+        <div class="container">
+          <div class="camara1">
+            <img src="./img/camara7.jpg" alt="" id="cam1" />
+          </div>
+          <div class="boton1">
+            <h2>digitales modernas</h2>
+            <button onclick="openmodal('camModerna')">
+              Hacer Click<br />Hasta Ahora
+            </button>
+          </div>
+          <div id="modal_container" class="modal-container">
+            <div class="modal">
+              <h1></h1>
+              <p></p>
+              <button id="close">Cerrar</button>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-</main>
-<footer>
-  <p>“Una fotografía no es un accidente, es un concepto.” <br>-Ansel Adams</p>
-</footer>
-  <script src="./intento1.js"></script>
-</body>
+      </section>
+    </main>
+    <footer>
+      <p>
+        “La fotografia es un secreto de un secreto. Cuanto mas te dice, menos sabes“ <br> -Diane Arbus
+      </p>
+    </footer>
+    <script src="./intento1.js"></script>
+  </body>
 </html>
